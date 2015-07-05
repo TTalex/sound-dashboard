@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sound Board</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script src="script.js" type="text/javascript"></script>
+</head>
+
+<body id="body" onload="loaded()">
+
+
+<div class="all">
+<div class="menus">
+<div onclick="resetboxes()" id="menu1" class="menu">All</div>
+<div onclick="perso()" id="menu2" class="menu">Favorites</div>
+</div>
+<div class="boxes">
+
+<!--
+Adding a new soundbox is done by copy and pasting the following code.
+Remember to update img and audio "src" attributes, as well as the possible link to source. 
+-->
+<div class="box">
+<img class="innerimg" onclick="nextElementSibling.play()" src="imgs/Dmaj.jpg" alt="Dmaj">
+<audio src="sounds/Dmaj.wav"></audio>
+<div class="save" onclick="fav(this, parentNode)" title="Add to favorite list">&hearts;</div>
+<div class="keybind" title="Key Biding"></div>
+<a href="http://ibeat.org/piano-chords-free/" class="help" title="Source">?</a>
+</div>
+
+<div class="box">
+<img class="innerimg" onclick="nextElementSibling.play()" src="imgs/Amaj.jpg" alt="Amaj">
+<audio src="sounds/Amaj.wav"></audio>
+<div class="save" onclick="fav(this, parentNode)" title="Add to favorite list">&hearts;</div>
+<div class="keybind" title="Key Biding"></div>
+<a href="http://ibeat.org/piano-chords-free/" class="help" title="Source">?</a>
+</div>
+
+<div class="box">
+<img class="innerimg" onclick="nextElementSibling.play()" src="imgs/Bmin.jpg" alt="Bmin">
+<audio src="sounds/Bmin.wav"></audio>
+<div class="save" onclick="fav(this, parentNode)" title="Add to favorite list">&hearts;</div>
+<div class="keybind" title="Key Biding"></div>
+<a href="http://ibeat.org/piano-chords-free/" class="help" title="Source">?</a>
+</div>
+
+<div class="box">
+<img class="innerimg" onclick="nextElementSibling.play()" src="imgs/Gmaj.jpg" alt="Gmaj">
+<audio src="sounds/Gmaj.wav"></audio>
+<div class="save" onclick="fav(this, parentNode)" title="Add to favorite list">&hearts;</div>
+<div class="keybind" title="Key Biding"></div>
+<a href="http://ibeat.org/piano-chords-free/" class="help" title="Source">?</a>
+</div>
+
+<div class="box">
+<img class="innerimg" onclick="nextElementSibling.play()" src="imgs/quack.jpg" alt="quack">
+<audio src="sounds/quack.mp3"></audio>
+<div class="save" onclick="fav(this, parentNode)" title="Add to favorite list">&hearts;</div>
+<div class="keybind" title="Key Biding"></div>
+<a href="http://soundjax.com" class="help" title="Source">?</a>
+</div>
+
+<div class="box">
+<img class="innerimg" onclick="nextElementSibling.play()" src="imgs/terminator.jpg" alt="terminator">
+<audio src="sounds/terminator.mp3"></audio>
+<div class="save" onclick="fav(this, parentNode)" title="Add to favorite list">&hearts;</div>
+<div class="keybind" title="Key Biding"></div>
+<a href="http://soundjax.com" class="help" title="Source">?</a>
+</div>
+
+
+</div>
+</div>
+</body>
+</html>
